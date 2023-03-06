@@ -1,0 +1,528 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    background: #8d77c3;
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo{
+  margin-top: 15px;
+}
+header .header-left .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: rgb(0, 0, 0);
+}
+
+.links #link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  background-color: #000;
+  transition: 0.5s width ease;
+}
+
+.links #link:hover::after {
+  width: 100%;
+}
+
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    background: transparent;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+      margin: 0;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #8d77c3;
+        
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+}
+/*FOOTER*/
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #8d77c3;
+  padding: 35px 0;
+  padding-left: 20px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .drustvene-mreze a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .drustvene-mreze a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+@media (max-width:1200px) {
+ .link-logo{
+  display: flex;
+
+ }
+
+  .toggle-btn{
+   display: flex;
+  }
+
+  .links{
+  width: 100%;
+  }
+  .social-media{
+   width: 100%;
+   text-align: center;
+  }
+
+  .main{
+   flex-direction: column;
+   align-items: flex-start;
+  }
+
+  .links ul{
+   width: 100%;
+   flex-direction: column;
+  }
+
+  .links li {
+   text-align: center;
+  }
+}
+/*KRAJ FOOTER-A*/
+
+.start-banner{
+  padding-top: 120px;
+}
+
+.banner{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+ }
+ 
+ .main-line{
+  display: flex;
+    align-items: center;
+    height: 1px;
+      background-color: #E5E5E5;
+      margin-bottom: 20px;
+ }
+
+ .line{
+  justify-content: end;
+ }
+
+
+ .line-color{
+  width: 40px;
+  height: 8px;
+  background-color: #8B0000;
+ }
+
+ .section-1{
+  padding-top: 20px;
+  padding-right: 15px;
+ }
+
+ .section-1 h2{
+  padding-bottom: 10px;
+  font-size: 48px;
+ }
+
+ .section-1 p{
+  padding-bottom: 10px;
+  font-size: 18px;
+ }
+
+ .section-2{
+  padding-left: 15px;
+ }
+
+.btn-section{
+  margin-top: 40px;
+}
+
+ .btn{
+  padding: 20px;
+  background-color: #8B0000;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+ }
+
+ .color{
+  background-color: #1E77D5;
+ }
+
+ .toggle-btn {
+  position: absolute;
+  top: 2.25rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+ }
+ 
+ .toggle-btn .bar{
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 5px;
+ }
+ 
+ .content{
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+
+ .main-container{
+  padding-top: 120px;
+ }
+
+ .container-1{
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-around;
+ }
+ 
+ .container-2{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 60px;
+ }
+ 
+ .image-section{
+  display: flex;
+  background-color: grey;
+ }
+ 
+ .text-section{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+ }
+ 
+ .text-section h2{
+  font-size: 48px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+ }
+
+ .text-section p {
+  font-size: 18px;
+  line-height: 22px;
+ }
+
+ p{
+  color: rgba(0, 0, 0, 0.7)
+ }
+
+ .container-3{
+  display: flex;
+ }
+
+ .sekcija {
+   margin-top: 60px;
+   margin-left: 120px;
+   margin-right: 120px;
+   border: 2px solid black;
+   margin-bottom: 50px;
+ }
+ 
+ .sekcija h1 {
+   font-size: 1.9vw;
+   text-align: center;
+ }
+ 
+ .galerija-sekcija{
+  
+  padding: 50px 0;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+.galerija-sekcija h1{
+  font-size: 4vw;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.galerija-sekcija .galerija a {
+  padding: 10px;
+}
+
+.border{
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 60px auto;
+}
+
+.galerija-sekcija .galerija{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.galerija-sekcija .slika{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.galerija-sekcija .slika img{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.galerija-sekcija .slika:hover img{
+  transform: scale(1.6);
+}
+
+@media screen and (max-width:960px) {
+  .galerija-sekcija .slika{
+    flex: 33.33%;
+  }
+
+  .container-1{
+    flex-direction: column;
+  }
+
+  .container-2{
+    flex-direction: column;
+  }
+
+  .text-section{
+    width: 400px;
+  }
+
+  .text-section h2{
+    font-size: 20px;
+  }
+
+  .text-section p{
+    font-size: 14px;
+  }
+
+  .content{
+    width: 100%;
+    padding: 30px;
+
+  }
+
+  .banner{
+    height: 600px;
+    text-align: center;
+  }
+
+  .banner p{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .galerija-sekcija .slika{
+    flex: 50%;
+  }
+
+  .galerija-sekcija h1{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .galerija-sekcija .slika{
+    flex: 100%;
+  }
+}
+
+.line-center{
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.naslov h1{
+  text-align: center;
+}
+
+header{
+  background-color: #8B0000;
+}
