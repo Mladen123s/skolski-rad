@@ -256,8 +256,9 @@ ul {
 
 .banner{
   display: flex;
-  align-items: center;
-  padding: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
  }
  
  .main-line{
@@ -470,6 +471,16 @@ ul {
     flex-direction: column;
   }
 
+  video{
+    width: 450px;
+  }
+
+  .banner{
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .text-section{
     width: 400px;
   }
@@ -486,15 +497,6 @@ ul {
     width: 100%;
     padding: 30px;
 
-  }
-
-  .banner{
-    height: 600px;
-    text-align: center;
-  }
-
-  .banner p{
-    width: 300px;
   }
 }
 
